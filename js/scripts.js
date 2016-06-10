@@ -7,7 +7,10 @@ var pingPong = function(integer) {
   var array = [];
   debugger;
   for (i = 1; i <= integer; i++) {
-    if (i % 3 === 0) {
+    if (i % 15 === 0) {
+      array[i] = "pingpong";
+    }
+    else if (i % 3 === 0) {
       array[i] = "ping";
     }
     else if (i % 5 === 0) {
