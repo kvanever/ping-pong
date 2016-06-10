@@ -6,11 +6,12 @@ $(document).ready(function(){
 
   $("#input").submit(function(event){
     event.preventDefault();
-    var input = ($("#blank").val());
+    var input = parseInt($("input#integer").val());
 
-    var output = "";
+    var output = pingPong(input);
 
-    $('#output').text(output);
-
+    output.forEach(function(element)) {
+      $('ul#output').append("<li>" + element + ""</li>"");
+    }
   });
 });
