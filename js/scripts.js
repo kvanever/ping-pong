@@ -9,7 +9,7 @@ $(document).ready(function(){
     var input = parseInt($("input#integer").val());
 
     var output = pingPong(input);
-
+    $('ul#output').html("");
     output.forEach(function(element)) {
       $('ul#output').append("<li>" + element + ""</li>"");
     }
