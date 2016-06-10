@@ -35,8 +35,9 @@ $(document).ready(function(){
 
     var output = pingPong(input);
 
-    output.forEach(function(element) {
-      $('ul#output').append("<li>" + element + "</li>");
-    });
+    $('ul#output').html("");
+    output.forEach(function(element)) {
+      $('ul#output').append("<li>" + element + ""</li>"");
+    }
   });
 });
