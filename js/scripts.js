@@ -5,21 +5,25 @@
 
 var pingPong = function(integer) {
   var array = [];
-  for (i = 1; i <= integer; i++) {
-    if (i % 15 === 0) {
-      array[i] = "pingpong";
+  if (integer > 0) {
+    for (i = 1; i <= integer; i++) {
+      if (i % 15 === 0) {
+        array[i] = "pingpong";
+      }
+      else if (i % 3 === 0) {
+        array[i] = "ping";
+      }
+      else if (i % 5 === 0) {
+        array[i] = "pong";
+      }
+      else {
+        array[i] = i;
+      }
     }
-    else if (i % 3 === 0) {
-      array[i] = "ping";
-    }
-    else if (i % 5 === 0) {
-      array[i] = "pong";
-    }
-    else {
-      array[i] = i;
-    }
+    return array;
+  } else {
+    return false;
   }
-  return array;
 }
 
 // User Interface Logic
@@ -35,9 +39,12 @@ $(document).ready(function() {
     var output = pingPong(input);
 
     $('ul#output').html("");
-    output.forEach(function(element) {
+    if (output) {
+      output.forEach(function(element) {
       $('ul#output').append("<li>" + element + " </li>");
-    });
-
+      });
+    } else {
+      alert("Please enter a positive integer")
+    }
   });
 });
