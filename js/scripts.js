@@ -1,8 +1,3 @@
-/*This file is for your custom js.  All yours*/
-// Business Logic
-
-// Main Ping Pong function
-
 var pingPong = function(integer) {
   var array = [];
   if (integer > 0) {
@@ -25,10 +20,6 @@ var pingPong = function(integer) {
     return false;
   }
 }
-
-// User Interface Logic
-
-// Calls input from form-input.html
 
 $(document).ready(function() {
   $("#input").submit(function(event){
