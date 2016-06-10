@@ -5,7 +5,6 @@
 
 var pingPong = function(integer) {
   var array = [];
-  debugger;
   for (i = 1; i <= integer; i++) {
     if (i % 15 === 0) {
       array[i] = "pingpong";
@@ -27,17 +26,18 @@ var pingPong = function(integer) {
 
 // Calls input from form-input.html
 
-$(document).ready(function(){
-
+$(document).ready(function() {
   $("#input").submit(function(event){
     event.preventDefault();
+
     var input = parseInt($("input#integer").val());
 
     var output = pingPong(input);
 
     $('ul#output').html("");
-    output.forEach(function(element)) {
-      $('ul#output').append("<li>" + element + ""</li>"");
-    }
+    output.forEach(function(element) {
+      $('ul#output').append("<li>" + element + "</li>");
+    });
+
   });
 });
