@@ -33,17 +33,25 @@
       <header>
         <h1>Ping Pong</h1>
       </header>
-      <form id="input">
-        <div class="form-group">
-          <label for="blank">Please enter an integer</label>
-          <input type="number" class="form-control" id="integer" placeholder="Please enter an integer" required>
-        </div>
-        <button type="submit" name="button">Play Ping Pong</button>
-      </form>
-      <div class="output">
-        <ul id="output">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <form id="input">
+              <div class="form-group">
+                <label for="blank">Please enter an integer</label>
+                <input type="number" class="form-control" id="integer" placeholder="Please enter an integer" required>
+              </div>
+              <button type="submit" name="button" class = "btn btn-success">Play Ping Pong</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <div class="output">
+              <ul id="output">
 
-        </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
       <footer>
         <p>&copy; 2016 Epicodus Pair Project, Inc.</p>

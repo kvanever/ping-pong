@@ -36,7 +36,7 @@ $(document).ready(function() {
 
     $('ul#output').html("");
     output.forEach(function(element) {
-      $('ul#output').append("<li>" + element + "</li>");
+      $('ul#output').append("<li>" + element + " </li>");
     });
 
   });
