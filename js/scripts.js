@@ -10,6 +10,9 @@ var pingPong = function(integer) {
     if (i % 3 === 0) {
       array[i] = "ping";
     }
+    else if (i % 5 === 0) {
+      array[i] = "pong";
+    }
     else {
       array[i] = i;
     }
