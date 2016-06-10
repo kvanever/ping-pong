@@ -7,7 +7,12 @@ var pingPong = function(integer) {
   var array = [];
   debugger;
   for (i = 1; i <= integer; i++) {
-    array[i] = i;
+    if (i % 3 === 0) {
+      array[i] = "ping";
+    }
+    else {
+      array[i] = i;
+    }
   }
   return array;
 }
